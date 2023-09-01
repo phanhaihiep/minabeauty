@@ -1,0 +1,137 @@
+body,
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.blog-title-wrapper {
+  height: 400px;
+  width: 100%;
+  background-color: #f0f8ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-title {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.blog-title .title {
+  font-weight: bold;
+}
+
+.blog-title .sub-title {
+  color: #cecece;
+  font-weight: 500;
+}
+
+.blog-list-wrapper {
+  padding: 2rem 0;
+}
+
+.blog-list-nav {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.blog-list-nav li {
+  padding: 1rem 1rem 1rem 0;
+  color: #cecece;
+  cursor: pointer;
+}
+
+.blog-list-nav li:hover {
+  color: black;
+}
+
+.blog-list-nav li.active {
+  color: black;
+  font-weight: bold;
+}
+
+.blog-list {
+  padding: 2rem 0;
+
+  display: flex;
+  gap: 1rem;
+}
+
+.blog-list-item__img:hover img {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.blog-list-item__img img {
+  width: 100%;
+  height: 250px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.blog-list-item__sub-title {
+  background-color: #f0f8ff;
+  padding: 1rem;
+  margin: 1rem 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-list-item__sub-title .left {
+  font-weight: bold;
+}
+
+.blog-list-item__title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.blog-list-item__description {
+  color: #cecece;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+.view-button {
+  background-color: #98fb98;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .blog-list {
+    flex-direction: column;
+  }
+
+  .blog-list-item {
+    margin-bottom: 2rem;
+  }
+
+  .view-button {
+    width: 100%;
+  }
+
+  .blog-title {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .blog-list-wrapper {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
